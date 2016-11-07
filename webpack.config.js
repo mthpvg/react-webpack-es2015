@@ -1,4 +1,4 @@
-var config = {
+const config = {
   context: __dirname + "/app",
   entry: "./main.js",
 
@@ -19,4 +19,5 @@ var config = {
     ],
   }
 };
+
 module.exports = config;
