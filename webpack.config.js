@@ -1,4 +1,8 @@
 const config = {
+  devtool: 'eval-source-map',
+  devServer: {
+    historyApiFallback: true
+  },
   context: __dirname + "/app",
   entry: "./main.js",
 
