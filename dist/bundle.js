@@ -79,7 +79,7 @@
 	      return _react2.default.createElement(
 	        'h1',
 	        null,
-	        'Hello'
+	        'Hello World 2'
 	      );
 	    }
 	  }]);

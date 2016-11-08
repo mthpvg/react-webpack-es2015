@@ -1,14 +1,12 @@
-const config = {
-  devtool: 'eval-source-map',
-  devServer: {
-    historyApiFallback: true
-  },
-  context: __dirname + "/app",
-  entry: "./main.js",
+var path = require('path');
 
+module.exports = {
+  entry: {
+    app: path.resolve(__dirname, '../app/main.js')
+  },
   output: {
     filename: "bundle.js",
-    path: __dirname + "/dist",
+    path: path.resolve(__dirname, '../dist')
   },
   module: {
     loaders: [
@@ -23,5 +21,3 @@ const config = {
     ],
   }
 };
-
-module.exports = config;
