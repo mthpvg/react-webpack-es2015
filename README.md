@@ -24,6 +24,5 @@ npm run build
 - vendor chunk
 - nvm and node version
 - remove pug ?
--.babelrc
 - lint
 - hot reloading
