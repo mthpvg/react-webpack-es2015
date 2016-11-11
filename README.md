@@ -21,7 +21,6 @@ npm run build
 ## TODO
 
 - CSS
-- vendor chunk
 - nvm and node version
 - remove pug ?
 - lint
