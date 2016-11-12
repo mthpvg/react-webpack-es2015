@@ -20,7 +20,6 @@ npm run build
 
 ## TODO
 
-- CSS
 - nvm and node version
 - remove pug ?
 - lint

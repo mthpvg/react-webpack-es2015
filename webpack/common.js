@@ -1,6 +1,7 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var webpack = require('webpack')
+var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -24,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       }
     ],
   },
@@ -35,6 +36,7 @@ module.exports = {
       inject: 'body',
       chunks: ['app', 'vendor']
     }),
-    new webpack.optimize.CommonsChunkPlugin('vendor', '[name].[hash].js')
+    new webpack.optimize.CommonsChunkPlugin('vendor', '[name].[hash].js'),
+    new ExtractTextPlugin("[name].[hash].css")
   ]
 };
