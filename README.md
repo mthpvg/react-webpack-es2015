@@ -24,3 +24,4 @@ npm run build
 - remove pug ?
 - lint
 - hot reloading
+- jest
